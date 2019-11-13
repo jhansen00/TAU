@@ -14,4 +14,8 @@ public class TyposPage {
     public String getTypoMessaging(){
         return driver.findElement(typosMessaging).getText();
     }
+
+    public static class ContextMenuPage {
+
+    }
 }

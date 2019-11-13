@@ -61,6 +61,12 @@ public class HomePage {
         return new HoversPage(driver);
     }
 
+    //Click on Context Menu link
+    public ContextMenuPage clickContextMenu(){
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
     //Clicking the link with the passed in text
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
