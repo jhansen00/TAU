@@ -67,6 +67,12 @@ public class HomePage {
         return new ContextMenuPage(driver);
     }
 
+    //Click on Add/Remove Elewent link
+    public AddRemoveElementPage clickAddRemoveElement(){
+        clickLink("Add/Remove Elements");
+        return new AddRemoveElementPage(driver);
+    }
+
     //Clicking the link with the passed in text
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
