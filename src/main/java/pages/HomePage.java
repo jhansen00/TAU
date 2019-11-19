@@ -73,6 +73,12 @@ public class HomePage {
         return new AddRemoveElementPage(driver);
     }
 
+    //Click on Key Presses Link
+    public KeyPressesPage clickKeyPresses(){
+        clickLink("Key Presses");
+        return new KeyPressesPage(driver);
+    }
+
     //Clicking the link with the passed in text
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
